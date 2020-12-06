@@ -12,11 +12,11 @@ import { ConnectionOptions } from 'typeorm';
 // Check typeORM documentation for more information.
 const config: ConnectionOptions = {
     type: 'mysql',
-    host: 'localhost',
+    host: 'beijbiwhpdiaer1mmbrm-mysql.services.clever-cloud.com',
     port: 3306,
-    username: 'admin',
-    password: '99xLeyto25',
-    database: 'toynovo',
+    username: 'utjwr0hnxv8i4tn5',
+    password: '4q0osrck5k5U4SyBnlQ7',
+    database: 'beijbiwhpdiaer1mmbrm',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
 
     // We are using migrations, synchronize should be set to false.
