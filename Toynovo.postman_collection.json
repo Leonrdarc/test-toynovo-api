@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "f0bb0b3d-8160-41e1-bc2e-8f96058afd2b",
+		"name": "Toynovo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Toy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Aasdasd",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "asdasfa",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "24124",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": "/Users/leoarchila/Downloads/karma_icon.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}toy",
+					"host": [
+						"{{localhost}}toy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Toys",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Ombe\",\n    \"description\": \"Ombex2\",\n    \"img\": \"asd.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}toy",
+					"host": [
+						"{{localhost}}toy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Toy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "img",
+							"type": "file",
+							"src": "/Users/leoarchila/Downloads/Karma-logo-pink.png"
+						},
+						{
+							"key": "name",
+							"value": "Hijole",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}toy?id=13",
+					"host": [
+						"{{localhost}}toy"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Toy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Yeiii\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}toy?id=2",
+					"host": [
+						"{{localhost}}toy"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Toy Image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Ombe\",\n    \"description\": \"Ombex2\",\n    \"img\": \"asd.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}toy/uploads/juguetes/Karma-logo-pink0e0eb46f-fcc7-4706-9c3b-17fc597da12c.png",
+					"host": [
+						"{{localhost}}toy"
+					],
+					"path": [
+						"uploads",
+						"juguetes",
+						"Karma-logo-pink0e0eb46f-fcc7-4706-9c3b-17fc597da12c.png"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "4165f0cb-5078-42f2-a1ad-94aa2f8fc87f",
+			"key": "localhost",
+			"value": "http://localhost:8000/"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
