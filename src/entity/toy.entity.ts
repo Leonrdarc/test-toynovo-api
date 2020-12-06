@@ -6,11 +6,14 @@ export class Toy {
     id: number;
 
     @Column({nullable: false})
-    title: string;
+    name: string;
 
-    @Column({nullable: false})
+    @Column({nullable: true})
     description: string;
 
+    @Column({nullable: false})
+    price: number;
+    
     @Column({default: "default.png"})
     img: string;
 }

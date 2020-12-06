@@ -1,5 +1,5 @@
 export class CreateToyDTO {
-    title: string;
+    name: string;
     description?: string;
-    img: string;
+    price: number;
 }

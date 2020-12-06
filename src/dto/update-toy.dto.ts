@@ -1,5 +1,6 @@
 export class UpdateToyDTO {
-    title?: string;
+    name?: string;
     description?: string;
-    img?: string;
+    price?: number;
+    img?:string;
 }
